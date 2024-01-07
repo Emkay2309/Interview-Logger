@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400&display=swap');
+
+body{
+  font-family: 'Playpen Sans', cursive;
+  background-color : #2f2b2b;
+  color:#fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  gap: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.table-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+button {
+  appearance: none;
+  outline: none;
+  border: 0;
+  padding: 8px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Playpen Sans"  cursive;
+}
+.search {
+  width: 200px;
+}
+button{
+  font-weight: 600;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #73addf;
+  color:#fff;
+  font-weight: 600;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 350px;
+  word-wrap: break-word;
+  text-align: left;
+  color: #fff;
+}
+
+table tr:hover {
+  background-color: #3f3c3c;
+}
+
+table  th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color:white;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.edit{
+  background-color: #73addf;
+  color: #fff;
+  text-transform: uppercase;
+}
+.delete{
+  background-color: lightcoral;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width : 600px) {
+  tr th {
+    min-width: unset;
+  }
+  table th{
+    font-size: 12px;
+  }
+  .actions{
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+}
